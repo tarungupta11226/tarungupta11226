@@ -116,7 +116,7 @@ body.editing .photo-edit{display:flex}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 
 /* ============ SECTIONS ============ */
-.section{padding:120px 6vw;max-width:1280px;margin-inline:auto;position:relative;z-index:1}
+.section{padding:60px 6vw;max-width:1280px;margin-inline:auto;position:relative;z-index:1}
 .section-head{margin-bottom:50px}
 .section-head h2,
 .section h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(32px,4vw,52px);letter-spacing:-.01em}
@@ -219,7 +219,7 @@ body.editing [data-edit]:focus{outline:1px solid var(--accent);background:rgba(2
   .floating-badge.b2{bottom:5%;left:0%}
   .floating-badge.b3{top:10%;right:0%}
   .about-grid{grid-template-columns:1fr;gap:30px}
-  .section{padding:80px 6vw}
+  .section{padding:40px 6vw}
   .hero{padding-bottom:40px}
   .modal-card{padding:24px}
   .modal-meta{grid-template-columns:1fr}

@@ -20,49 +20,31 @@ const PROJECTS = [
     github: "https://github.com/tarungupta11226/inventory-demand-forecaster",
   },
   {
-    name: "Vision Bot",
-    tag: "Computer Vision · Robotics",
-    stack: "Arduino · OpenCV · Python",
+    name: "Live Port Weather Checker",
+    tag: "Open-Meteo API · Streamlit",
+    stack: "Python · requests · pandas",
     status: "Shipped",
     description:
-      "A small differential-drive robot that recognises colored markers using a webcam and OpenCV, then steers toward them. Wireless control over Wi-Fi from a Flask dashboard.",
-    github: "https://github.com/tarungupta11226/vision-bot",
+      "A simple web application that fetches and displays current weather data for various ports around the world using the Open-Meteo API.",
+    github: "https://github.com/tarungupta11226/port-weather-checker",
   },
   {
-    name: "Handwriting GAN",
-    tag: "Generative ML",
-    stack: "TensorFlow · Keras",
-    status: "Research",
-    description:
-      "A DCGAN trained on the EMNIST dataset to generate human-like handwritten letters. Includes a training script, loss visualisations, and a tiny inference web demo.",
-    github: "https://github.com/tarungupta11226/handwriting-gan",
-  },
-  {
-    name: "Voice Assistant (Edge)",
-    tag: "Embedded AI",
-    stack: "Raspberry Pi · Whisper · LLM",
-    status: "Prototype",
-    description:
-      "An offline voice assistant running on a Raspberry Pi 4 — speech-to-text with Whisper, on-device LLM responses, and a hardware push-to-talk button.",
-    github: "https://github.com/tarungupta11226/edge-voice-assistant",
-  },
-  {
-    name: "Self-Balancing Robot",
-    tag: "Control Systems",
-    stack: "C++ · IMU · PID",
+    name: "Parts Criticality Tagger",
+    tag: "Rule-based Classifier",
+    stack: "OpenCV · pandas",
     status: "Shipped",
     description:
-      "A two-wheel self-balancing robot using an MPU-6050 IMU and a tuned PID controller. Includes a Bluetooth remote and tuning notes.",
-    github: "https://github.com/tarungupta11226/self-balancing-bot",
+      "Rule-based parts criticality tagger for marine inventory. Reads stock lists (.xlsx/.csv), applies regex keyword matching across part names and system categories, and auto-tags each item as CRITICAL, IMPORTANT, or STANDARD. Exports a colour-coded Excel report.",
+    github: "https://github.com/tarungupta11226/stock-tagger",
   },
   {
-    name: "Paper Notes",
-    tag: "ML Reading Log",
-    stack: "Markdown · Notion API",
+    name: "My Progress",
+    tag: "Personal Dashboard",
+    stack: "Machine Learning · DSA · Data Science",
     status: "Ongoing",
     description:
-      "My personal collection of summaries and notes on ML papers I've read — Transformers, RL, robotics learning, and more.",
-    github: "https://github.com/tarungupta11226/paper-notes",
+      "A personal dashboard to track my progress in learning machine learning, data science, and data structures & algorithms. It visualizes my learning journey, completed projects, and upcoming goals.",
+    github: "https://github.com/tarungupta11226/my-progress",
   },
 ];
 

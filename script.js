@@ -116,33 +116,8 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal()
 /* ---------- year ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
-/* ---------- edit mode ---------- */
-const editToggle = document.getElementById("editToggle");
-editToggle.addEventListener("click", () => {
-  const on = document.body.classList.toggle("editing");
-  document.querySelectorAll("[data-edit]").forEach(el => {
-    el.contentEditable = on ? "true" : "false";
-  });
-  editToggle.querySelector(".edit-label").textContent = on ? "Editing" : "Edit";
-});
 
-/* ---------- photo edit ---------- */
-document.querySelectorAll(".photo-edit").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const target = document.getElementById(btn.dataset.target);
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = "image/*";
-    input.onchange = () => {
-      const file = input.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = e => { target.src = e.target.result; };
-      reader.readAsDataURL(file);
-    };
-    input.click();
-  });
-});
+
 
 /* ---------- soft reveal on scroll ---------- */
 const io = new IntersectionObserver((entries) => {

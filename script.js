@@ -11,13 +11,13 @@ const PROFILE = {
 
 const PROJECTS = [
   {
-    name: "Neural Path Planner",
-    tag: "Reinforcement Learning",
-    stack: "Python · PyTorch · Gym",
-    status: "Active",
+    name: "Inventory Demand Forecaster",
+    tag: "Linear Regression & Random Forest",
+    stack: "Python · scikit-learn · pandas",
+    status: "Shipped",
     description:
-      "A deep reinforcement learning agent that learns to navigate a 2D obstacle field. Built with PPO, trained on a custom Gym environment, and visualised through a real-time matplotlib dashboard.",
-    github: "https://github.com/your-handle/neural-path-planner",
+      "A machine learning model that predicts future demand for products in an inventory system. It uses historical sales data to train a linear regression and random forest model, providing accurate forecasts to optimize stock levels.",
+    github: "https://github.com/tarungupta11226/inventory-demand-forecaster",
   },
   {
     name: "Vision Bot",
@@ -26,7 +26,7 @@ const PROJECTS = [
     status: "Shipped",
     description:
       "A small differential-drive robot that recognises colored markers using a webcam and OpenCV, then steers toward them. Wireless control over Wi-Fi from a Flask dashboard.",
-    github: "https://github.com/your-handle/vision-bot",
+    github: "https://github.com/tarungupta11226/vision-bot",
   },
   {
     name: "Handwriting GAN",
@@ -35,7 +35,7 @@ const PROJECTS = [
     status: "Research",
     description:
       "A DCGAN trained on the EMNIST dataset to generate human-like handwritten letters. Includes a training script, loss visualisations, and a tiny inference web demo.",
-    github: "https://github.com/your-handle/handwriting-gan",
+    github: "https://github.com/tarungupta11226/handwriting-gan",
   },
   {
     name: "Voice Assistant (Edge)",
@@ -44,7 +44,7 @@ const PROJECTS = [
     status: "Prototype",
     description:
       "An offline voice assistant running on a Raspberry Pi 4 — speech-to-text with Whisper, on-device LLM responses, and a hardware push-to-talk button.",
-    github: "https://github.com/your-handle/edge-voice-assistant",
+    github: "https://github.com/tarungupta11226/edge-voice-assistant",
   },
   {
     name: "Self-Balancing Robot",
@@ -53,7 +53,7 @@ const PROJECTS = [
     status: "Shipped",
     description:
       "A two-wheel self-balancing robot using an MPU-6050 IMU and a tuned PID controller. Includes a Bluetooth remote and tuning notes.",
-    github: "https://github.com/your-handle/self-balancing-bot",
+    github: "https://github.com/tarungupta11226/self-balancing-bot",
   },
   {
     name: "Paper Notes",
@@ -62,7 +62,7 @@ const PROJECTS = [
     status: "Ongoing",
     description:
       "My personal collection of summaries and notes on ML papers I've read — Transformers, RL, robotics learning, and more.",
-    github: "https://github.com/your-handle/paper-notes",
+    github: "https://github.com/tarungupta11226/paper-notes",
   },
 ];
 

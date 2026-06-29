@@ -4,9 +4,9 @@
    ========================================================= */
 
 const PROFILE = {
-  linkedin:  "https://www.linkedin.com/in/your-handle",
-  github:    "https://github.com/your-handle",
-  instagram: "https://instagram.com/your-handle",
+  linkedin:  "https://www.linkedin.com/in/tarun-gupta-3634213a2/",
+  github:    "https://github.com/tarungupta11226",
+  instagram: "https://www.instagram.com/thet4run?igsh=ZXNlM3V2dTRhb3Fs",
 };
 
 const PROJECTS = [

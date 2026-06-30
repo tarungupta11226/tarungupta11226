@@ -38,7 +38,7 @@ body::before{
 }
 
 /* ============ NAV ============ */
-.hero{position:relative;padding:20px 6vw 30px;min-height:auto;z-index:1}
+.hero{position:relative;padding:14px 6vw 30px;min-height:auto;z-index:1}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;letter-spacing:.5px}
 .logo span{color:var(--accent)}
@@ -55,7 +55,7 @@ body::before{
 /* ============ HERO ============ */
 .hero-grid{
   display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;
-  margin-top:30px;max-width:1280px;margin-inline:auto
+  margin-top:6px;max-width:1280px;margin-inline:auto
 }
 .rule{width:80px;height:2px;background:var(--accent);margin-bottom:18px}
 .kicker{font-family:'JetBrains Mono',monospace;color:var(--accent);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
@@ -155,6 +155,7 @@ body::before{
 .exp-card-head{display:flex;align-items:center;gap:16px;padding:20px 22px;border:1px solid var(--line);border-radius:16px;background:var(--surface);transition:.25s}
 .exp-item:hover .exp-card-head{border-color:var(--accent);background:var(--surface-2)}
 .exp-logo{width:46px;height:46px;border-radius:10px;object-fit:contain;background:#fff;padding:5px;flex-shrink:0;border:1px solid var(--line)}
+.exp-logo-dark{background:#000}
 .exp-card-title{flex:1;min-width:0}
 .exp-role{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#fff}
 .exp-company{font-size:13px;color:var(--accent);margin-top:2px}
@@ -166,10 +167,12 @@ body::before{
 .exp-item.open .exp-toggle{transform:rotate(45deg);color:var(--accent);border-color:var(--accent)}
 .exp-brief{padding:14px 22px 0;color:var(--muted);font-size:13px}
 .exp-detail{
-  max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease;
-  padding:0 22px;color:var(--muted);font-size:14px;line-height:1.7
+  max-height:0;overflow:hidden;
+  transition:max-height .45s ease,padding .45s ease,opacity .35s ease,transform .45s ease;
+  padding:0 22px;color:var(--muted);font-size:14px;line-height:1.7;
+  opacity:0;transform:translateY(-10px)
 }
-.exp-item.open .exp-detail{max-height:300px;padding:14px 22px 4px}
+.exp-item.open .exp-detail{max-height:300px;padding:14px 22px 4px;opacity:1;transform:translateY(0)}
 
 /* projects */
 .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
@@ -232,7 +235,7 @@ body::before{
   .exp-card-head{flex-wrap:wrap;gap:12px}
   .exp-date{margin-top:4px}
   .nav-links{display:none}
-  .hero-grid{grid-template-columns:1fr;gap:60px;margin-top:20px}
+  .hero-grid{grid-template-columns:1fr;gap:60px;margin-top:6px}
   .hero-right{order:-1;min-height:auto}
   .photo-card{width:min(280px,70%)}
   .floating-badge.b1{top:0;left:5%}

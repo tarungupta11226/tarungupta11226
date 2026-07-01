@@ -73,7 +73,7 @@ body::before{
 }
 .btn.primary{background:var(--accent);color:#04130a}
 .btn.primary:hover{background:#1ee87a;transform:translateY(-1px)}
-.btn.ghost{border-color:var(--line);color:var(--text)}
+.btn.ghost{border-color:var(--line);color:var(--text);background:transparent}
 .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
 
 .hero-stats{margin-top:50px;display:flex;gap:40px;flex-wrap:wrap}
@@ -181,11 +181,11 @@ body::before{
 .project-card{
   position:relative;border:1px solid var(--line);border-radius:18px;
   background:var(--surface);cursor:pointer;transition:.25s;overflow:hidden;
-  display:flex;flex-direction:column;min-height:320px
+  display:flex;flex-direction:column;min-height:220px
 }
 .project-card:hover{border-color:var(--accent);transform:translateY(-4px);background:var(--surface-2)}
 .pimg{
-  width:100%;aspect-ratio:4/3;overflow:hidden;flex-shrink:0;
+  width:100%;aspect-ratio:16/9;overflow:hidden;flex-shrink:0;
   border-bottom:1px solid var(--line);
 }
 .pimg img{
@@ -193,12 +193,12 @@ body::before{
   display:block;transition:transform .4s ease;
 }
 .project-card:hover .pimg img{transform:scale(1.04)}
-.pcontent{padding:20px 22px;flex:1;display:flex;flex-direction:column;gap:10px}
+.pcontent{padding:16px 20px 44px;flex:1;display:flex;flex-direction:column;gap:8px}
 .project-card .pidx{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
-.project-card .pname{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#fff;line-height:1.25}
+.project-card .pname{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:#fff;line-height:1.25}
 .project-card .parrow{
-  position:absolute;right:16px;bottom:16px;width:34px;height:34px;border-radius:999px;
-  background:var(--accent);color:#04130a;display:grid;place-items:center;font-size:18px;
+  position:absolute;right:16px;bottom:14px;width:32px;height:32px;border-radius:999px;
+  background:var(--accent);color:#04130a;display:grid;place-items:center;font-size:16px;
   transition:.25s;flex-shrink:0
 }
 .project-card:hover .parrow{transform:rotate(-45deg)}

@@ -55,17 +55,40 @@ document.getElementById("link-instagram").href = PROFILE.instagram;
 
 /* ---------- render projects ---------- */
 const grid = document.getElementById("projectGrid");
-PROJECTS.forEach((p, i) => {
-  const card = document.createElement("article");
-  card.className = "project-card";
-  card.innerHTML = `
-    <div class="pidx">// 0${i + 1}</div>
-    <div class="pname">${p.name}</div>
-    <div class="ptags">${p.tag}</div>
-    <div class="parrow">›</div>
-  `;
-  card.addEventListener("click", () => openModal(p));
-  grid.appendChild(card);
+
+function renderProjects(showAll) {
+  grid.innerHTML = "";
+  const visible = showAll ? PROJECTS : PROJECTS.slice(0, 3);
+  visible.forEach((p, i) => {
+    const card = document.createElement("article");
+    card.className = "project-card";
+    card.innerHTML = `
+      <div class="pidx">// 0${i + 1}</div>
+      <div class="pname">${p.name}</div>
+      <div class="ptags">${p.tag}</div>
+      <div class="parrow">›</div>
+    `;
+    card.addEventListener("click", () => openModal(p));
+    grid.appendChild(card);
+  });
+}
+
+renderProjects(false);
+
+// Show more / show less button
+const showMoreBtn = document.getElementById("showMoreBtn");
+let expanded = false;
+showMoreBtn.addEventListener("click", () => {
+  expanded = !expanded;
+  renderProjects(expanded);
+  showMoreBtn.textContent = expanded ? "Show less ↑" : `Show more (${PROJECTS.length - 3} more) ↓`;
+  // re-observe new cards for scroll reveal
+  grid.querySelectorAll(".project-card").forEach(el => {
+    el.style.opacity = 0;
+    el.style.transform = "translateY(16px)";
+    el.style.transition = "opacity .6s ease, transform .6s ease";
+    io.observe(el);
+  });
 });
 
 /* ---------- modal ---------- */

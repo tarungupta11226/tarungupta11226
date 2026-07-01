@@ -194,6 +194,10 @@ body::before{
 .project-card:hover .parrow{transform:rotate(-45deg)}
 .project-card .ptags{margin-top:auto;color:var(--muted);font-size:12px;font-family:'JetBrains Mono',monospace}
 
+/* show more */
+.show-more-wrap{margin-top:24px;display:flex;justify-content:center}
+.show-more-btn{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.5px}
+
 /* contact */
 .contact{text-align:left}
 .contact h2{margin-bottom:14px}

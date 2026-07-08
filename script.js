@@ -135,6 +135,13 @@ document.querySelectorAll(".exp-card").forEach(card => {
   });
 });
 
+/* ---------- research expand/collapse ---------- */
+document.querySelectorAll(".research-head").forEach(head => {
+  head.addEventListener("click", () => {
+    head.closest(".research-card").classList.toggle("open");
+  });
+});
+
 /* ---------- photo flip on click ---------- */
 const photoCard = document.querySelector(".photo-card");
 if (photoCard) {
@@ -152,7 +159,7 @@ const io = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.12 });
-document.querySelectorAll(".section, .project-card, .exp-card-head").forEach(el => {
+document.querySelectorAll(".section, .project-card, .exp-card-head, .research-head").forEach(el => {
   el.style.opacity = 0;
   el.style.transform = "translateY(16px)";
   el.style.transition = "opacity .6s ease, transform .6s ease";

@@ -236,6 +236,25 @@ body::before{
 }
 .research-link:hover{border-color:var(--accent);background:rgba(22,213,107,.08)}
 
+/* ============ EDUCATION ============ */
+.education-grid{display:flex;flex-direction:column;gap:16px;max-width:760px}
+.education-card{border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden;transition:border-color .25s,background .25s}
+.education-card:hover{border-color:var(--accent)}
+.education-head{width:100%;display:flex;gap:18px;align-items:flex-start;justify-content:space-between;padding:16px;border:0;background:transparent;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.education-info{display:flex;flex:1;min-width:0;flex-direction:column}
+.education-tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.education-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#fff;line-height:1.3}
+.education-grade{margin-top:7px;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:12px}
+.education-toggle{width:30px;height:30px;border-radius:999px;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:16px;flex-shrink:0;transition:.25s;margin-top:2px}
+.education-card.open .education-toggle{transform:rotate(45deg);color:var(--accent);border-color:var(--accent)}
+.education-detail{max-height:0;overflow:hidden;padding:0 16px;transition:max-height .45s ease,padding .45s ease,opacity .35s ease;opacity:0;color:var(--muted);font-size:14px;line-height:1.7}
+.education-card.open .education-detail{max-height:600px;padding:0 16px 20px;opacity:1}
+.education-detail p{margin-bottom:14px}
+.education-detail h3{margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:15px;color:#fff}
+.education-detail ul{margin:0;padding-left:20px}
+.education-detail li+li{margin-top:4px}
+.education-head:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+
 /* contact */
 .contact{text-align:left}
 .contact h2{margin-bottom:14px}

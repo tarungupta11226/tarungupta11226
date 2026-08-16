@@ -142,6 +142,15 @@ document.querySelectorAll(".research-head").forEach(head => {
   });
 });
 
+/* ---------- education expand/collapse ---------- */
+document.querySelectorAll(".education-head").forEach(head => {
+  head.addEventListener("click", () => {
+    const card = head.closest(".education-card");
+    const isOpen = card.classList.toggle("open");
+    head.setAttribute("aria-expanded", isOpen);
+  });
+});
+
 /* ---------- photo flip on click ---------- */
 const photoCard = document.querySelector(".photo-card");
 if (photoCard) {
@@ -159,7 +168,7 @@ const io = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.12 });
-document.querySelectorAll(".section, .project-card, .exp-card-head, .research-head").forEach(el => {
+document.querySelectorAll(".section, .project-card, .exp-card-head, .research-head, .education-head").forEach(el => {
   el.style.opacity = 0;
   el.style.transform = "translateY(16px)";
   el.style.transition = "opacity .6s ease, transform .6s ease";

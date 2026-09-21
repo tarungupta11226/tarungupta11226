@@ -42,7 +42,7 @@ h1 span{color:var(--accent)}
 .intro-name{grid-area:name}
 .profile{grid-area:profile}
 .intro-copy{grid-area:copy;margin-top:28px}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(4rem,8vw,6.7rem);line-height:.78;margin:0 0 -16px;letter-spacing:-.04em}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(4rem,8vw,6.7rem);line-height:.9;margin:0 0 18px;letter-spacing:-.04em}
 .subtitle{font-family:var(--mono);font-size:.73rem;color:var(--muted);text-transform:lowercase;margin:0}
 .intro-text{max-width:670px;font-size:1.04rem;color:#cbd1d9}
 .intro-text p{margin:0 0 18px}

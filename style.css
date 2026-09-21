@@ -29,7 +29,7 @@ h1 span{color:var(--accent)}
 .nav-social svg,
 .profile-social svg{flex-shrink:0;display:block}
 .nav-social svg{width:15px;height:15px}
-.profile-social svg{width:20px;height:20px}
+.profile-social svg{width:22px;height:22px}
 .icon-linkedin,
 .icon-github{fill:currentColor;stroke:none}
 .icon-mail,
@@ -38,7 +38,7 @@ h1 span{color:var(--accent)}
 .nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.2rem}
 .progress{height:2px;background:transparent}.progress span{display:block;height:100%;width:0;background:var(--accent)}
 .page{padding-top:70px}
-.intro{display:grid;grid-template-columns:1fr 285px;grid-template-areas:"name profile" "copy profile";gap:0 70px;align-items:start;padding:45px 0 55px}
+.intro{display:grid;grid-template-columns:1fr 285px;grid-template-areas:"name profile" "copy profile";gap:28px 70px;align-items:start;padding:45px 0 55px}
 .intro-name{grid-area:name}
 .profile{grid-area:profile}
 .intro-copy{grid-area:copy}

@@ -29,10 +29,11 @@ if (progressBar) {
 
 /* ---------- active nav link on scroll ---------- */
 const navLinks = document.querySelectorAll(".nav-menu a");
-const sections = Array.from(navLinks)
+const sectionLinks = Array.from(navLinks).filter((a) => a.getAttribute("href").startsWith("#"));
+const sections = sectionLinks
   .map((a) => document.querySelector(a.getAttribute("href")))
   .filter(Boolean);
-if (navLinks.length && sections.length) {
+if (sectionLinks.length && sections.length) {
   const setActive = () => {
     let current = sections[0];
     sections.forEach((sec) => {
@@ -54,18 +55,6 @@ document.querySelectorAll(".experience-head").forEach((btn) => {
     const isOpen = item.classList.toggle("open");
     const plus = btn.querySelector(".plus");
     if (plus) plus.textContent = isOpen ? "−" : "+";
-  });
-});
-
-/* ---------- education accordion ---------- */
-document.querySelectorAll(".education-head").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const item = btn.closest(".education-item");
-    if (!item) return;
-    const isOpen = item.classList.toggle("open");
-    const plus = btn.querySelector(".plus");
-    if (plus) plus.textContent = isOpen ? "−" : "+";
-    btn.setAttribute("aria-expanded", isOpen);
   });
 });
 

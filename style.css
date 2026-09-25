@@ -65,12 +65,12 @@ h3{font-family:var(--serif);font-weight:400;font-size:1.55rem;line-height:1.2;ma
 .updates{display:grid;gap:4px}
 .updates>div{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:8px 0}
 .updates span{font-family:var(--sans);font-size:.72rem;color:var(--accent)}
-.updates p{margin:0;font-size:.91rem;color:#c7ced7}
+.updates p{margin:0;font-size:.98rem;color:#c7ced7}
 .project-list{border-top:1px solid var(--line)}
 .project{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);transition:padding-left .2s}
 .project:hover{padding-left:8px}
 .project-number,.research-index{font-family:var(--sans);font-size:.72rem;color:var(--accent);padding-top:7px}
-.project p{max-width:730px;margin:8px 0;color:var(--muted);font-size:.9rem}
+.project p{max-width:730px;margin:8px 0;color:var(--muted);font-size:.98rem}
 .project .meta{color:var(--faint);margin:0}
 .project a{font-family:var(--sans);font-size:.72rem}
 .experience-list,.education-list{border-top:1px solid var(--line)}
@@ -80,14 +80,14 @@ h3{font-family:var(--serif);font-weight:400;font-size:1.55rem;line-height:1.2;ma
 .experience-head .plus,.education-head .plus{font-family:var(--sans);font-size:1.2rem;color:var(--accent)}
 .experience-detail,.education-detail{max-height:0;overflow:hidden;transition:max-height .35s ease}
 .experience-item.open .experience-detail{max-height:300px}
-.experience-detail p,.education-detail{font-size:.9rem;color:var(--muted);margin:0 0 20px;padding-right:50px}
+.experience-detail p,.education-detail{font-size:.98rem;color:var(--muted);margin:0 0 20px;padding-right:50px}
 .education-detail{padding-left:0}
 .education-item.open .education-detail{max-height:500px}
 .education-detail h4{font-family:var(--sans);font-size:.72rem;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
 .education-detail ul{padding-left:18px;margin:0 0 22px;color:var(--muted);font-size:.88rem}
 .research-item{display:grid;grid-template-columns:70px 1fr;gap:20px;border-top:1px solid var(--line);padding:24px 0}
 .research-item h3{font-size:1.7rem;max-width:850px}
-.research-item p{max-width:760px;color:var(--muted);font-size:.9rem;margin:9px 0}
+.research-item p{max-width:760px;color:var(--muted);font-size:.98rem;margin:9px 0}
 .authors{font-family:var(--sans);font-size:.72rem!important;color:var(--faint)!important}
 .research-item a{font-family:var(--sans);font-size:.72rem;display:inline-block;margin-top:10px}
 .contact{padding-bottom:80px}.contact p{color:var(--muted)}

@@ -58,6 +58,17 @@ document.querySelectorAll(".experience-head").forEach((btn) => {
   });
 });
 
+/* ---------- projects: show more / fewer ---------- */
+const projectList = document.getElementById("projectList");
+const toggleProjects = document.getElementById("toggleProjects");
+if (projectList && toggleProjects) {
+  toggleProjects.addEventListener("click", () => {
+    const expanded = projectList.classList.toggle("expanded");
+    toggleProjects.setAttribute("aria-expanded", expanded);
+    toggleProjects.textContent = expanded ? "Show fewer projects ↑" : "See more projects ↓";
+  });
+}
+
 /* ---------- footer year ---------- */
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();

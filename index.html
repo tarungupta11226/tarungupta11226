@@ -75,6 +75,7 @@
   <section id="updates">
     <h2>Updates</h2>
     <div class="updates">
+      <div><span>Nov 2026</span><p>Launched <strong>Origin Labs</strong>, focusing on open-weight superintelligence and embodied AI.</p></div>
       <div><span>Oct 2026</span><p>Earned <strong>All India Rank 96</strong> in the IPN AI Olympiad 2026.</p></div>
       <div><span>Oct 2026</span><p>Qualified for the pre-final round of the International Youth Math Challenge 2026.</p></div>
       <div><span>Sep 2026</span><p>Placed in the overall <strong>top 7%</strong> of the International Computer Science Competition 2026.</p></div>
@@ -95,9 +96,25 @@
       <h2>Selected Projects</h2>
       <span class="mono-note">built / shipped</span>
     </div>
-    <div class="project-list">
-      <article class="project">
+    <div class="project-list" id="projectList">
+      <article class="project project-feature">
         <div class="project-number">01</div>
+        <div class="project-feature-body">
+          <a class="project-figure" href="airline-satisfaction-results.png" target="_blank" rel="noopener" aria-label="Open the full results figure">
+            <img src="airline-satisfaction-results.png" width="1280" height="837" alt="Results figure: model pipeline, holdout AUC ablations, and AUC versus training rows for the airline satisfaction model" loading="lazy">
+          </a>
+          <div class="project-feature-text">
+            <h3>Predicting Airline Satisfaction with Target-Encoded Gradient Boosting (Kaggle)</h3>
+            <span class="project-date">Nov 2026</span>
+            <p class="meta">LightGBM · XGBoost · CatBoost · Target Encoding · Ensembling</p>
+            <p>Entry for a Kaggle tabular classification competition (metric: ROC-AUC) on a synthetic airline-passenger-satisfaction dataset of about 700k training rows. Placed <strong>1,722 out of 3,734</strong> competing teams globally.</p>
+            <p><strong>Approach:</strong> out-of-fold target encoding of Flight Distance (3,474 distinct values acting as a group identifier), finer histogram binning, and an equal-weight blend of LightGBM, XGBoost and CatBoost. Single-model holdout AUC 0.9586 → blend 0.9604; public leaderboard AUC 0.96028.</p>
+            <a href="https://github.com/tarungupta11226/predicting-airline-satisfaction" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-number">02</div>
         <div>
           <h3>Inventory Demand Forecaster</h3>
           <p class="meta">Linear Regression & Random Forest · Python · scikit-learn · pandas</p>
@@ -106,15 +123,15 @@
         </div>
       </article>
       <article class="project">
-        <div class="project-number">02</div>
+        <div class="project-number">03</div>
         <div>
           <h3>Parts Criticality Tagger</h3>
           <p class="meta">Python · Streamlit · ML</p>
           <p>Internal tool for classifying maritime inventory as CRITICAL, IMPORTANT, or STANDARD using real stock data.</p>
         </div>
       </article>
-      <article class="project">
-        <div class="project-number">03</div>
+      <article class="project project-extra">
+        <div class="project-number">04</div>
         <div>
           <h3>Live Port Weather Checker</h3>
           <p class="meta">Open-Meteo API · Streamlit · Python · requests · pandas</p>
@@ -122,14 +139,17 @@
           <a href="https://github.com/tarungupta11226/port-weather-checker" target="_blank">Code ↗</a>
         </div>
       </article>
-      <article class="project">
-        <div class="project-number">04</div>
+      <article class="project project-extra">
+        <div class="project-number">05</div>
         <div>
           <h3>Local AI Chatbot for Ship Manuals</h3>
           <p class="meta">Local LLM · RAG · Python</p>
           <p>A local retrieval-based assistant designed to answer questions from ship manuals without sending the documents to a remote model.</p>
         </div>
       </article>
+    </div>
+    <div class="projects-more">
+      <button class="show-more" id="toggleProjects" type="button" aria-expanded="false" aria-controls="projectList">See more projects ↓</button>
     </div>
   </section>
 
@@ -138,9 +158,15 @@
   <section id="experience">
     <h2>Experience</h2>
     <div class="experience-list">
-      <article class="experience-item open">
+      <article class="experience-item">
         <button class="experience-head">
-          <div><span class="eyebrow">Sep 2026 — Current</span><h3>Applied AI Intern · GenZab</h3></div><span class="plus">−</span>
+          <div><span class="eyebrow">Nov 2026 — Current</span><h3>Founder · Origin Labs</h3></div><span class="plus">+</span>
+        </button>
+        <div class="experience-detail"><p>Researching machine thinking to build open-weight superintelligence.</p></div>
+      </article>
+      <article class="experience-item">
+        <button class="experience-head">
+          <div><span class="eyebrow">Sep 2026 — Current</span><h3>Applied AI Intern · GenZab</h3></div><span class="plus">+</span>
         </button>
         <div class="experience-detail"><p>Working across large-data analysis, edge-case testing, and ML to improve a SaaS product's real-world output. Getting hands-on experience with how AI systems are evaluated and deployed for students and teachers.</p></div>
       </article>
